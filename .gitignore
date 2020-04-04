@@ -1,0 +1,48 @@
+.DS_Store
+__MACOSX/
+
+.idea
+
+# Xcode
+xcuserdata/
+
+# Obj-C / Swift Specific
+*.hmap
+
+# Packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Cocoapods
+Pods/
+
+# Carthage
+Carthage/Build
+
+# Swift Package Manager
+Packages/
+Package.pins
+Package.resolved
+.build/
+
+# Accio Dependency Management
+Dependencies/
+.accio
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+iOSInjectionProject/
+
+# Certificates and Other Secrets
+CertificateSigningRequest.certSigningRequest
+.env
