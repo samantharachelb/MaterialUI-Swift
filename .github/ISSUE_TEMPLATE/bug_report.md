@@ -54,10 +54,10 @@ If there is, include that here.
 ## Pre-submission Checklist
 <!-- Make sure that you have done everything in this checklist! place a 'x' in each box when you have done that task in the check list-->
 - [ ] I have read the [**CONTRIBUTING**](contributing) document.
-- [ ] I have read the the project's [Code of Conduct](code_of_conduct) document.
+- [ ] I have read the the project's [Code of Conduct](code-of-conduct) document.
 - [ ] There are no similar issues or related pull requests that are _open_.
 - [ ] This is issue is related to an app I am developing/maintaining, and not an app I use that happens to use this framework.
 
 
 [contributing]: https://github.com/samantharachelb/MaterialUI-Swift/blob/master/.github/contributing.md
-[code_of_conduct]: https://github.com/samantharachelb/MaterialUI-Swift/blob/master/.github/code_of_conduct.md
+[code-of-conduct]: https://github.com/samantharachelb/MaterialUI-Swift/blob/master/.github/code_of_conduct.md

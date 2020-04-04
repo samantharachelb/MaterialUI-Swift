@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		A194248E2439177F00852859 /* MaterialUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19424842439177F00852859 /* MaterialUI.framework */; };
 		A19424932439177F00852859 /* MaterialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19424922439177F00852859 /* MaterialUITests.swift */; };
-		A19424952439177F00852859 /* MaterialUI.h in Headers */ = {isa = PBXBuildFile; fileRef = A19424872439177F00852859 /* MaterialUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A19424DC243917E700852859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19424DB243917E700852859 /* AppDelegate.swift */; };
 		A19424DE243917E700852859 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19424DD243917E700852859 /* SceneDelegate.swift */; };
 		A19424E0243917E700852859 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19424DF243917E700852859 /* ViewController.swift */; };
 		A19424E3243917E700852859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19424E1243917E700852859 /* Main.storyboard */; };
 		A19424E5243917E800852859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19424E4243917E800852859 /* Assets.xcassets */; };
 		A19424E8243917E800852859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19424E6243917E800852859 /* LaunchScreen.storyboard */; };
+		A1FC26022439392D00881A6E /* Colours.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC26012439392D00881A6E /* Colours.swift */; };
+		A1FC260624393E7F00881A6E /* HexColourString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC260524393E7F00881A6E /* HexColourString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		A19424842439177F00852859 /* MaterialUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A19424872439177F00852859 /* MaterialUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaterialUI.h; sourceTree = "<group>"; };
 		A19424882439177F00852859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A194248D2439177F00852859 /* MaterialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19424922439177F00852859 /* MaterialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialUITests.swift; sourceTree = "<group>"; };
@@ -43,6 +43,9 @@
 		A19424E4243917E800852859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A19424E7243917E800852859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A19424E9243917E800852859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1FC25FE2439383800881A6E /* MaterialUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaterialUI.h; sourceTree = "<group>"; };
+		A1FC26012439392D00881A6E /* Colours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colours.swift; sourceTree = "<group>"; };
+		A1FC260524393E7F00881A6E /* HexColourString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColourString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +77,7 @@
 		A194247A2439177F00852859 = {
 			isa = PBXGroup;
 			children = (
-				A19424862439177F00852859 /* MaterialUI */,
+				A19424862439177F00852859 /* Sources */,
 				A19424912439177F00852859 /* MaterialUITests */,
 				A19424DA243917E700852859 /* MaterialUIExamples */,
 				A19424852439177F00852859 /* Products */,
@@ -91,13 +94,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A19424862439177F00852859 /* MaterialUI */ = {
+		A19424862439177F00852859 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A19424872439177F00852859 /* MaterialUI.h */,
+				A1FC25FD2439381A00881A6E /* iOS */,
 				A19424882439177F00852859 /* Info.plist */,
+				A1FC25FE2439383800881A6E /* MaterialUI.h */,
 			);
-			path = MaterialUI;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		A19424912439177F00852859 /* MaterialUITests */ = {
@@ -123,6 +127,23 @@
 			path = MaterialUIExamples;
 			sourceTree = "<group>";
 		};
+		A1FC25FD2439381A00881A6E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A1FC26002439390900881A6E /* Colours */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		A1FC26002439390900881A6E /* Colours */ = {
+			isa = PBXGroup;
+			children = (
+				A1FC26012439392D00881A6E /* Colours.swift */,
+				A1FC260524393E7F00881A6E /* HexColourString.swift */,
+			);
+			path = Colours;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -130,7 +151,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A19424952439177F00852859 /* MaterialUI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +222,7 @@
 				TargetAttributes = {
 					A19424832439177F00852859 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					A194248C2439177F00852859 = {
 						CreatedOnToolsVersion = 11.3;
@@ -263,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1FC260624393E7F00881A6E /* HexColourString.swift in Sources */,
+				A1FC26022439392D00881A6E /* Colours.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -437,6 +460,7 @@
 		A19424992439177F00852859 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NUXWT6SEGG;
@@ -445,14 +469,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MaterialUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.samantharachelb.ios.MaterialUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +488,7 @@
 		A194249A2439177F00852859 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NUXWT6SEGG;
@@ -469,11 +497,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MaterialUI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.samantharachelb.ios.MaterialUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -485,6 +515,7 @@
 		A194249C2439177F00852859 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NUXWT6SEGG;
 				INFOPLIST_FILE = MaterialUITests/Info.plist;
@@ -503,6 +534,7 @@
 		A194249D2439177F00852859 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NUXWT6SEGG;
 				INFOPLIST_FILE = MaterialUITests/Info.plist;
@@ -564,7 +596,7 @@
 				A19424972439177F00852859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A19424982439177F00852859 /* Build configuration list for PBXNativeTarget "MaterialUI" */ = {
 			isa = XCConfigurationList;
@@ -573,7 +605,7 @@
 				A194249A2439177F00852859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A194249B2439177F00852859 /* Build configuration list for PBXNativeTarget "MaterialUITests" */ = {
 			isa = XCConfigurationList;
@@ -582,7 +614,7 @@
 				A194249D2439177F00852859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A19424EA243917E800852859 /* Build configuration list for PBXNativeTarget "MaterialUIExamples" */ = {
 			isa = XCConfigurationList;
@@ -591,7 +623,7 @@
 				A19424EC243917E800852859 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

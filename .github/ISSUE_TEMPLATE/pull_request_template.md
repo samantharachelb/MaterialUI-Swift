@@ -47,10 +47,10 @@ Please include the issues that this Pull Request closes.
 
 ## Pre-submission Checklist
 - [ ] I have read and followed the guidelines in the [Contributing](contributing) document.
-- [ ] I have read and followed the guidelines in the [Code of Conduct](code_of_conduct)
+- [ ] I have read and followed the guidelines in the [Code of Conduct](code-of-conduct)
 - [ ] There are no similar pull requests that are _open_.
 - [ ] I have added an explanation of what my changes do and why I would like them included.
-- [ ] My code follows the [code style](code_style) of this project.
+- [ ] My code follows the [code style](code-style) of this project.
 - [ ] All _new and existing_ tests have passed.
 - [ ] I certify that I have the right to submit the code I am contributing to the project, and that I have signed off on all of my changes. (See contribution agreement below).
 
@@ -67,5 +67,5 @@ Please include the issues that this Pull Request closes.
 
 
 [contributing]: https://github.com/samantharachelb/MaterialUI-Swift/blob/master/.github/contributing.md
-[code_of_conduct]: https://github.com/samantharachelb/MaterialUI-Swift/blob/master/.github/code_of_conduct.md
-[code_style]: https://github.com/samantharachelb/MaterialUI-Swift/blob/master/.github/styleguide.md
+[code-of-conduct]: https://github.com/samantharachelb/MaterialUI-Swift/blob/master/.github/code_of_conduct.md
+[code-style]: https://github.com/samantharachelb/MaterialUI-Swift/blob/master/.github/styleguide.md

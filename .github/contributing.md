@@ -152,19 +152,19 @@ Please follow these steps to have your contribution considered by the maintainer
   - :zap: ​ `:zap:`  improving performance
 
 ### Swift Style Guide
-All code must adhere to the [Style Guide](styleguide)
+All code must adhere to the [Style Guide](style-guide)
 
 ## TL;DR
 We get it you don't want to read all of that so here's a summary.
-- This project and everyone participating follow a [Code of Conduct](code_of_conduct)
+- This project and everyone participating follow a [Code of Conduct](code-of-conduct)
 - Check to see if the issue already exists before creating a new bug report, feature request, or suggestion.
 - Be as descriptive as possible in your bug report, feature request, or suggestion.
 - Pull requests are subject to quality checks and shouldn't overwhelm the project maintainers.
-- If you're contributing to the project be sure to follow the guidelines in the section on [Git commit messages](#git-commit-messages) and the [Swift Style Guide](styleguide)
+- If you're contributing to the project be sure to follow the guidelines in the section on [Git commit messages](#git-commit-messages) and the [Swift Style Guide](style-guide)
 
 
 [project-owner]: mailto:me@samantharachelb.ca
 [issues]: https://github.com/samantharachelb/MaterialUI-Swift/issues
 [search-issues]: https://github.com/samantharachelb/MaterialUI-Swift/issues?q=is%3Aissue+is%3Aopen+
-[styleguide]: https://github.com/samantharachelb/MaterialUI-Swift/blob/master/.github/styleguide.md
-[code_of_conduct]: https://github.com/samantharachelb/MaterialUI-Swift/blob/master/.github/code_of_conduct.md
+[style-guide]: https://github.com/samantharachelb/MaterialUI-Swift/blob/master/.github/styleguide.md
+[code-of-conduct]: https://github.com/samantharachelb/MaterialUI-Swift/blob/master/.github/code_of_conduct.md

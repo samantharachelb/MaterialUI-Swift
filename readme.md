@@ -7,3 +7,6 @@ Please read the [contributing](contributing) guidelines document for more inform
 
 ## License
 MaterialUI-Swift is licensed under the MIT License. Please see [license](license) file for more details.
+
+[contributing]: https://github.com/samantharachelb/MaterialUI-Swift/blob/master/.github/contributing.md
+[license]: https://github.com/samantharachelb/MaterialUI-Swift/blob/master/license

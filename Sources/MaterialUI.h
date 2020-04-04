@@ -8,12 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for MaterialUI.
+/// Version number for the framework
 FOUNDATION_EXPORT double MaterialUIVersionNumber;
 
-//! Project version string for MaterialUI.
+/// Version String for the framework
 FOUNDATION_EXPORT const unsigned char MaterialUIVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <MaterialUI/PublicHeader.h>
-
-
