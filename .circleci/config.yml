@@ -40,7 +40,7 @@ jobs:
       - checkout
       - run:
           name: Pre-start simulator
-          command: xcrun instruments -w "iPhone XS Max (13.0) [" || true
+          command: xcrun instruments -w "iPhone Xs Max (13.4) [" || true
       - run:
           name: Set Ruby Version
           command: echo 'chruby ruby-2.7' >> ~/.bash_profile
