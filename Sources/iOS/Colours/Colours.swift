@@ -23,11 +23,24 @@ public protocol MaterialUIColourPalette {
     
 }
 
+@objc(BootstrapColourPalette)
+public protocol BootstrapColourPalette {
+    static var primary: UIColor { get }
+    static var secondary: UIColor { get }
+    static var info: UIColor { get }
+    static var success: UIColor { get }
+    static var warning: UIColor { get }
+    static var danger: UIColor { get }
+    static var dark: UIColor { get }
+    static var light: UIColor { get }
+    static var white : UIColor { get }
+
+}
+
 open class Colour: UIColor {
-    // Colours are named exactly like the Google Material Design colours only these colours have been adjusted to look
+    // MaterialUI Colours are named exactly like the Google Material Design colours only these colours have been adjusted to look
     // less ugly and in line with their own colour groupings. Additionally these colours have been ordered by colour
     // rather than lexicographically
-    
     open class Red: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("ea2027")
         public static let shade50 = UIColor().hex("f8bcbe")
@@ -288,4 +301,16 @@ open class Colour: UIColor {
         public static let shade900 = UIColor().hex("394b53")
     }
 
+    // Bootstrap colour scheme
+    open class Bootstrap: BootstrapColourPalette {
+        public static let primary = Colour.Blue.shade500
+        public static let secondary = UIColor().hex("A1A1A1")
+        public static let info = Colour.Cyan.shade500
+        public static let success = Colour.Green.shade500
+        public static let warning = Colour.Amber.shade500
+        public static let danger = Colour.Red.shade500
+        public static let dark = UIColor().hex("3a3935")
+        public static let light = Colour.Grey.shade50
+        public static let white = UIColor().hex("ffffff")
+    }
 }
