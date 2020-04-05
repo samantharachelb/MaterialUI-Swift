@@ -29,3 +29,53 @@ jobs:
           path: swiftlint.xml
       - store_test_results:
           path: swiftlint.xml
+  test:
+    executor: default
+    shell: /bin/bash --login -o pipefail
+    environment:
+      HOMEBREW_NO_AUTO_UPDATE: 1
+      LC_ALL: en_US.UTF-8
+      LANG: en_US.UTF-8
+    steps:
+      - checkout
+      - run:
+          name: Pre-start simulator
+          command: xcrun instruments -w "iPhone XS Max (13.0) [" || true
+      - run:
+          name: Set Ruby Version
+          command: echo 'chruby ruby-2.7' >> ~/.bash_profile
+      - run:
+          name: Install Gems
+          command: bundle install
+      - run:
+          name: Run framework tests
+          command: bundle exec fastlane test
+      - store_artifacts:
+          path: test_output/report.junit
+  build:
+    executor: default
+    shell: /bin/bash --login -o pipefail
+    environment:
+      HOMEBREW_NO_AUTO_UPDATE: 1
+      LC_ALL: en_US.UTF-8
+      LANG: en_US.UTF-8
+    steps:
+      - checkout
+      - run:
+          name: Set Ruby Version
+          command: echo 'chruby ruby-2.7' >> ~/.bash_profile
+      - run:
+          name: Install Gems
+          command: bundle install
+      - run:
+          name: build app
+          command: bundle exec fastlane build
+
+workflows:
+  version: 2.1
+  lint_code:
+    jobs:
+      - lint
+  run_tests:
+    jobs:
+      - test
