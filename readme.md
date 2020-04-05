@@ -1,4 +1,8 @@
 # MaterialUI for Swift
+![CircleCI](https://img.shields.io/circleci/build/github/samantharachelb/MaterialUI-Swift/master?logo=circleci&style=flat-square)
+![Codecov](https://img.shields.io/codecov/c/github/samantharachelb/MaterialUI-Swift?logo=codecov&logoColor=white&style=flat-square)
+![Swift](https://img.shields.io/badge/swift-5.0-orange?logo=swift&logoColor=white&style=flat-square)
+![Donate Bitcoin](https://img.shields.io/badge/Donate-3KuYHQyj3ttpzVuNwGVw6BaditMLV2R4SN-orange?logo=bitcoin&style=flat-square)
 
 Material UI Components for iOS Applications written in Swift.
 

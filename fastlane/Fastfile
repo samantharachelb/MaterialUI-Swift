@@ -22,7 +22,7 @@ platform :ios do
   lane :test do
     scan(
       project: "MaterialUI.xcodeproj",
-      devices: ["iPhone XS Max"],
+      devices: ["iPhone 11 Pro Max"],
       scheme: "MaterialUITests",
       clean: true,
       code_coverage: true
