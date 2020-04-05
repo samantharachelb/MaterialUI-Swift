@@ -20,7 +20,6 @@ public protocol MaterialUIColourPalette {
     static var shade700: UIColor { get }
     static var shade800: UIColor { get }
     static var shade900: UIColor { get }
-    
 }
 
 @objc(BootstrapColourPalette)
@@ -33,8 +32,7 @@ public protocol BootstrapColourPalette {
     static var danger: UIColor { get }
     static var dark: UIColor { get }
     static var light: UIColor { get }
-    static var white : UIColor { get }
-
+    static var white: UIColor { get }
 }
 
 open class Colour: UIColor {
@@ -53,20 +51,20 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("a3161b")
         public static let shade900 = UIColor().hex("8c1317")
     }
-    
+
     open class Pink: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("f06f85")
         public static let shade50 = UIColor().hex("f9c5ce")
         public static let shade100 = UIColor().hex("f6a8b5")
         public static let shade200 = UIColor().hex("f49aa9")
-        public static let shade300 = UIColor().hex("fe8b9d")
+        public static let shade300 = UIColor().hex("f38b9d")
         public static let shade400 = UIColor().hex("f17d91")
         public static let shade600 = UIColor().hex("d86377")
         public static let shade700 = UIColor().hex("c0586a")
         public static let shade800 = UIColor().hex("a84d5d")
         public static let shade900 = UIColor().hex("90424f")
     }
-    
+
     open class DeepOrange: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("ee5a24")
         public static let shade50 = UIColor().hex("f8bda7")
@@ -79,7 +77,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("a63f19")
         public static let shade900 = UIColor().hex("8e3615")
     }
-    
+
     open class Orange: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("f7a11f")
         public static let shade50 = UIColor().hex("fbd9a5")
@@ -92,7 +90,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("ac7015")
         public static let shade900 = UIColor().hex("946012")
     }
-    
+
     open class Amber: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("ffc412")
         public static let shade50 = UIColor().hex("fff3cf")
@@ -105,7 +103,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("b2890c")
         public static let shade900 = UIColor().hex("99750a")
     }
-    
+
     open class Yellow: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("ffeb3b")
         public static let shade50 = UIColor().hex("fff9c4")
@@ -118,7 +116,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("b2a429")
         public static let shade900 = UIColor().hex("998d23")
     }
-    
+
     open class Lime: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("c5e538")
         public static let shade50 = UIColor().hex("e7f4af")
@@ -131,7 +129,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("89a027")
         public static let shade900 = UIColor().hex("768921")
     }
-    
+
     open class LightGreen: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("a4cb38")
         public static let shade50 = UIColor().hex("daeaaf")
@@ -144,7 +142,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("728e27")
         public static let shade900 = UIColor().hex("627921")
     }
-    
+
     open class Green: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("4daf7c")
         public static let shade50 = UIColor().hex("b7dfca")
@@ -157,7 +155,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("357a56")
         public static let shade900 = UIColor().hex("2e694a")
     }
-    
+
     open class DarkGreen: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("009431")
         public static let shade50 = UIColor().hex("99d4ac")
@@ -170,7 +168,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("006722")
         public static let shade900 = UIColor().hex("00581d")
     }
-    
+
     open class Teal: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("009687")
         public static let shade50 = UIColor().hex("99d5cf")
@@ -183,7 +181,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("00695e")
         public static let shade900 = UIColor().hex("005a51")
     }
-    
+
     open class Cyan: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("3dc2d3")
         public static let shade50 = UIColor().hex("b1e6ed")
@@ -196,7 +194,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("2a8793")
         public static let shade900 = UIColor().hex("24747e")
     }
-    
+
     open class LightBlue: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("74baff")
         public static let shade50 = UIColor().hex("c7e3ff")
@@ -209,7 +207,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("5182b2")
         public static let shade900 = UIColor().hex("456f99")
     }
-    
+
     open class Blue: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("3773e3")
         public static let shade50 = UIColor().hex("afc7f3")
@@ -222,7 +220,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("26509e")
         public static let shade900 = UIColor().hex("214588")
     }
-    
+
     open class Indigo: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("5759bb")
         public static let shade50 = UIColor().hex("bbbce3")
@@ -235,7 +233,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("3c3e82")
         public static let shade900 = UIColor().hex("343570")
     }
-    
+
     open class DeepPurple: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("8854d0")
         public static let shade50 = UIColor().hex("cfbaec")
@@ -248,7 +246,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("5f3a91")
         public static let shade900 = UIColor().hex("51327c")
     }
-    
+
     open class Purple: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("cd84f1")
         public static let shade50 = UIColor().hex("ebcdf9")
@@ -261,7 +259,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("8f5ca8")
         public static let shade900 = UIColor().hex("7b4f90")
     }
-    
+
     open class Brown: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("915e3a")
         public static let shade50 = UIColor().hex("d3beb0")
@@ -274,9 +272,9 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("654128")
         public static let shade900 = UIColor().hex("573822")
     }
-    
+
     open class Grey: MaterialUIColourPalette {
-     public static let shade500 = UIColor().hex("aaa69d")
+        public static let shade500 = UIColor().hex("aaa69d")
         public static let shade50 = UIColor().hex("eeedeb")
         public static let shade100 = UIColor().hex("e5e4e1")
         public static let shade200 = UIColor().hex("dddbd7")
@@ -287,7 +285,7 @@ open class Colour: UIColor {
         public static let shade800 = UIColor().hex("66635e")
         public static let shade900 = UIColor().hex("55534e")
     }
-    
+
     open class BlueGrey: MaterialUIColourPalette {
         public static let shade500 = UIColor().hex("607d8b")
         public static let shade50 = UIColor().hex("cfd8dc")
@@ -305,7 +303,7 @@ open class Colour: UIColor {
     open class Bootstrap: BootstrapColourPalette {
         public static let primary = Colour.Blue.shade500
         public static let secondary = UIColor().hex("A1A1A1")
-        public static let info = Colour.Cyan.shade500
+        public static let info = UIColor().hex("63cedb")
         public static let success = Colour.Green.shade500
         public static let warning = Colour.Amber.shade500
         public static let danger = Colour.Red.shade500

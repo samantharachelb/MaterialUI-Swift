@@ -1,0 +1,31 @@
+version: 2.1
+executors:
+  default:
+    macos:
+      xcode: 11.4.0
+jobs:
+  lint:
+    executor: default
+    shell: /bin/bash --login -o pipefail
+    environment:
+      HOMEBREW_NO_AUTO_UPDATE: 1
+      LC_ALL: en_US.UTF-8
+      LANG: en_US.UTF-8
+    steps:
+      - checkout
+      - run:
+          name: Set Ruby Version
+          command: echo 'chruby ruby-2.7' >> ~/.bash_profile
+      - run:
+          name: Install Gems
+          command: bundle install
+      - run:
+          name: Install swiftlint
+          command: brew install swiftlint
+      - run:
+          name: Run Linter
+          command: bundle exec fastlane lint
+      - store_artifacts:
+          path: swiftlint.xml
+      - store_test_results:
+          path: swiftlint.xml

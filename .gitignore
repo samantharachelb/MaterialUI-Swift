@@ -46,3 +46,5 @@ iOSInjectionProject/
 # Certificates and Other Secrets
 CertificateSigningRequest.certSigningRequest
 .env
+
+swiftlint.xml
